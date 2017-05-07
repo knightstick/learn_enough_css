@@ -7,17 +7,20 @@
       a {
         color: red;
       }
-      div {
+      #exec-bio {
+        background-color: lightgray;
+      }
+      #highlight {
+        background-color: orange;
+      }
+      .bio-box {
         border: 1px solid black;
       }
-      li {
-        border: 1px solid black;
+      .bio-box a {
+        color: green;
       }
-      div a {
-        color: unset;
-      }
-      li a {
-        color: magenta;
+      .primary-bio {
+        background-color: azure;
       }
     </style>
   </head>
@@ -34,14 +37,14 @@
         <a href="http://example.com">Link</a>
       </li>
     </ul>
-    <h2>I'm an h2</h2>
-    <div>
+    <h2 id="highlight">I'm an h2</h2>
+    <div id="exec-bio" class="bio-box">
       <a href="http://example.com">I'm a link</a>
     </div>
-    <div>
-      <a href="http://example.com">I'm a link</a>
+    <div class="bio-box">
+      <a href="http://example.com" >I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box primary-bio">
       <a href="http://example.com">I'm a link</a>
     </div>
   </body>
